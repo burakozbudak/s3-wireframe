@@ -1,8 +1,191 @@
-/* #header, #hero, #gallery, #footer genişlikleri 750px olmalı */
+/* CSS Dosyası - Modern Ana Sayfa Tasarımı */
 
-/* #menu bir <nav> olmalı */
-/* #menu içindeki linklerin arka plan rengi: #777 */
-/* #menu linklerine hover yapıldığında arka plan rengi: #000 */
-/* #menu linklerinin padding değeri: 20px */
+/* Reset ve Temel Ayarlar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
-/* #footer butonu metni 'Başa dön' olmalı */
+/* Genişlik ayarları - 750px */
+#header, #hero, #gallery, #footer {
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Header Bölümü */
+#header {
+    background: #333;
+    color: white;
+    padding: 16px 0;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.logo h1 {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Menu Navigasyonu */
+#menu {
+    display: flex;
+}
+
+#menu ul {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+    margin: 0;
+    padding: 0;
+}
+
+#menu li {
+    margin: 0;
+    padding: 0;
+}
+
+#menu a {
+    color: white;
+    font-weight: 500;
+    padding: 20px;
+    background-color: #777;
+    display: block;
+}
+
+#menu a:hover {
+    background-color: #000;
+}
+/* Hero Bölümü */
+#hero {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 20px 20px;
+}
+.hero-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    color: white;
+    margin-bottom: 24px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+.hero-content p {
+    font-size: 18px;
+    color: rgba(255,255,255,0.9);
+    margin-bottom: 32px;
+}
+/* Gallery Bölümü */
+#gallery {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+.gallery-item {
+  flex: 1;
+  text-align: center;
+}
+
+.gallery-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Footer Bölümü */
+#footer {
+    background: #333;
+    display: flex;
+    color: white;
+    padding: 48px 20px 16px;
+}
+
+.footer-content {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.footer-content h3 {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+.footer-content p {
+    font-size: 17px;
+    margin-bottom: 32px;
+}
+
+.footer-button {
+    background: linear-gradient(45deg, #e74c3c, #c0392b);
+    color: white;
+    border: none;
+    padding: 16px 32px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
+}
+
+.footer-button:hover {
+    box-shadow: 0 6px 20px rgba(231, 76, 60, 0.4);
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 16px;
+    text-align: center;
+    font-size: 14px;
+    color: #bbb;
+}
+
+#header {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+    
+#menu ul {
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+    
+.hero-content h1 {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+    
+.hero-content p {
+    font-size: 16px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.hero-content h1 {
+    font-size: 28px;
+}
